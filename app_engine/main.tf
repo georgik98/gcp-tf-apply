@@ -1,5 +1,4 @@
 resource "google_app_engine_application" "app" {
-    project = var.project
   location_id = var.region
 }
 
@@ -22,14 +21,14 @@ resource "google_app_engine_standard_app_version" "default" {
   }
 }
 
-resource "google_storage_bucket" "app_bucket" {
-  name          = var.bucket_name
-  location      = var.region
-  force_destroy = true
-}
+# resource "google_storage_bucket" "app_bucket-1" {
+#   name          = var.bucket_name
+#   location      = var.region
+#   force_destroy = true
+# }
 
-resource "google_storage_bucket_object" "app_files" {
-  name   = "app.zip"
-  bucket = google_storage_bucket.app_bucket.name
-  source = "../app.zip"
-}
+# resource "google_storage_bucket_object" "app_files" {
+#   name   = "app.zip"
+#   bucket = google_storage_bucket.app_bucket-1.name
+#   source = "../app.zip"
+# }

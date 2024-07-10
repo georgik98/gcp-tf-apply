@@ -3,11 +3,11 @@ variable "project" {
 }
 
 variable "region" {
-  default = "eu-west12"
+  default = "eu-west"
 }
 
 variable "zone" {
-  default = "europe-west12-a"
+  default = "europe-west1-b"
 }
 
 variable "network_name" {
