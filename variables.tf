@@ -15,7 +15,7 @@ variable "network_name" {
 }
 
 variable "subnetwork_name" {
-  default = "subnet_vpc"
+  default = "subnet-vpc"
 }
 
 variable "ip_cidr_range" {

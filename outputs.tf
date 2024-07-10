@@ -1,9 +1,5 @@
-output "vpc_network_name" {
-  value = module.vpc.vpc_network_name
-}
-
-output "subnetwork_name" {
-  value = module.vpc.subnetwork_name
+output "vpc_subnetwork" {
+  value = module.vpc.vpc_subnetwork_name
 }
 
 output "app_engine_url" {
